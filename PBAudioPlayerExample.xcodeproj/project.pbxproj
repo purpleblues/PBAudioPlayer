@@ -14,6 +14,7 @@
 		F65B5AF71B1DE88400F13640 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65B5AF61B1DE88400F13640 /* Images.xcassets */; };
 		F65B5AFA1B1DE88400F13640 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F65B5AF81B1DE88400F13640 /* LaunchScreen.xib */; };
 		F65B5B061B1DE88500F13640 /* PBAudioPlayerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F65B5B051B1DE88500F13640 /* PBAudioPlayerExampleTests.m */; };
+		F65B5B111B1DE90000F13640 /* PBAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F65B5B101B1DE90000F13640 /* PBAudioPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		F65B5AFF1B1DE88500F13640 /* PBAudioPlayerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PBAudioPlayerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65B5B041B1DE88500F13640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F65B5B051B1DE88500F13640 /* PBAudioPlayerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBAudioPlayerExampleTests.m; sourceTree = "<group>"; };
+		F65B5B0F1B1DE90000F13640 /* PBAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBAudioPlayer.h; sourceTree = "<group>"; };
+		F65B5B101B1DE90000F13640 /* PBAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBAudioPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		F65B5AE81B1DE88400F13640 /* PBAudioPlayerExample */ = {
 			isa = PBXGroup;
 			children = (
+				F65B5B0F1B1DE90000F13640 /* PBAudioPlayer.h */,
+				F65B5B101B1DE90000F13640 /* PBAudioPlayer.m */,
 				F65B5AED1B1DE88400F13640 /* AppDelegate.h */,
 				F65B5AEE1B1DE88400F13640 /* AppDelegate.m */,
 				F65B5AF01B1DE88400F13640 /* ViewController.h */,
@@ -168,6 +173,7 @@
 				TargetAttributes = {
 					F65B5AE51B1DE88400F13640 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = N8LBHZSAC7;
 					};
 					F65B5AFE1B1DE88500F13640 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -222,6 +228,7 @@
 				F65B5AF21B1DE88400F13640 /* ViewController.m in Sources */,
 				F65B5AEF1B1DE88400F13640 /* AppDelegate.m in Sources */,
 				F65B5AEC1B1DE88400F13640 /* main.m in Sources */,
+				F65B5B111B1DE90000F13640 /* PBAudioPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +354,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PBAudioPlayerExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PBAudioPlayerExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
