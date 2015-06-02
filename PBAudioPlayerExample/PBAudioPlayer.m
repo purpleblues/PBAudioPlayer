@@ -1,6 +1,6 @@
 //
 //  PBAudioPlayer.m
-//  Shifter
+//  
 //
 //  Created by Purple on 2015. 5. 28..
 //  Copyright (c) 2015년 Purple. All rights reserved.
@@ -167,9 +167,11 @@
 
 }
 
--(void)seekToTimeInSeconds:(NSInteger)time{
+-(void)seekToTimeInSeconds:(NSUInteger)time{
 
-    if(time >= 0 && time <= self.durationInSeconds && _currentAudioFile){
+
+    if(time <= self.durationInSeconds && _currentAudioFile){
+        
         BOOL wasPlaying = _isPlaying;
         [self stop];
         _pausedTime = time;
